@@ -23,10 +23,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun mockData() {
-        // Initialize test locations
         val tasks: ArrayList<HashMap<String, String>> = ArrayList()
         val time = System.currentTimeMillis()
-        // Load items into ArrayList
         tasks.add(
             hashMapOf(
                 "task" to "Learn Java",
@@ -71,7 +69,6 @@ class MainActivity : AppCompatActivity() {
                 "time" to tomorrowTime.toString()
             )
         )
-        // Bind items to RecyclerView
         initViewAdapter(tasks)
     }
 }
